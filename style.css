@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+section:hover {
+    transform: scale(1.05); /* Zoom in effect */
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Make the headlines look clickable */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+h2:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.entry {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: circle;
+}
+
+footer {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header.light-mode {
+    background-color: #333;
+    color: white;
+}
+
+section.light-mode {
+    background-color: white;
+    color: #333;
+}
+
+footer.light-mode {
+    background-color: #333;
+    color: white;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header.dark-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section.dark-mode {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+footer.dark-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Common styles */
+header, section, footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Slider styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+#solidworks-video {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    transform-origin: center; /* Zoom from the center */
+}
+
+#solidworks-video:hover {
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+#solidworks-video:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.video-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-video {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    cursor: pointer;
+}
+
+.project-video:hover {
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+.description-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+}
