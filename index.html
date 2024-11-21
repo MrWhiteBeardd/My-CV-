@@ -11,15 +11,16 @@
 <body class="light-mode">
     <header class="light-mode">
         <h1>KARIM EL-HADY</h1>
-        <p>Nasr City, Cairo, Egypt | 
-            <a href="mailto:engkarimelhady@gmail.com">engkarimelhady@gmail.com</a> | 
-            <a href="tel:+201016758220">+20 01016758220</a> | 
-            <a href="https://www.linkedin.com/in/karim-elhady-4b065a1a4" target="_blank">LinkedIn</a> | 
+        <p>
+            Nasr City, Cairo, Egypt |
+            <a href="mailto:engkarimelhady@gmail.com">engkarimelhady@gmail.com</a> |
+            <a href="tel:+201016758220">+20 01016758220</a> |
+            <a href="https://www.linkedin.com/in/karim-elhady-4b065a1a4" target="_blank">LinkedIn</a> |
             <a href="https://github.com/MrWhiteBeardd" target="_blank">GitHub</a>
         </p>
-        <!-- Add the toggle slider -->
+        <!-- Light/Dark mode toggle switch -->
         <label class="switch">
-            <input type="checkbox" id="toggle-mode">
+            <input type="checkbox" id="toggle-mode" aria-label="Toggle light/dark mode">
             <span class="slider"></span>
         </label>
     </header>
@@ -76,25 +77,34 @@
                 <h3>Solar-Powered Water Pump</h3>
                 <p>Designed and built a solar-powered water pump system for irrigation purposes.</p>
             </div>
-            <div class="entry">
-                <h3>SolidWorks Projects</h3>
-                <div class="video-container">
-                    <video class="project-video" id="video1" width="320" height="240" controls>
-                        <source src="D:/LY2 Mechatronics/Re-Assembly of Radial Engine/Radial Engine Modified3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <video class="project-video" id="video2" width="320" height="240" controls>
-                        <source src="D:/Screen Records/2024-11-04 11-03-53.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <video class="project-video" id="video3" width="320" height="240" controls>
-                        <source src="D:/Screen Records/2024-10-23 12-37-13.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div id="video-description" class="description-box"></div>
+        </section>
+        <section id="projects">
+            <h2>SolidWorks Projects</h2>
+            <div class="video-container">
+                <!-- SolidWorks Video 1 -->
+                <video class="project-video" id="video1" width="320" height="240" controls>
+                    <source src="videos/Radial_Engine_Modified3.mp4" type="video/mp4">
+                    <track src="subtitles/Radial_Engine_Modified3.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- SolidWorks Video 2 -->
+                <video class="project-video" id="video2" width="320" height="240" controls>
+                    <source src="videos/2024-11-04_11-03-53.mp4" type="video/mp4">
+                    <track src="subtitles/2024-11-04_11-03-53.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- SolidWorks Video 3 -->
+                <video class="project-video" id="video3" width="320" height="240" controls>
+                    <source src="videos/2024-10-23_12-37-13.mp4" type="video/mp4">
+                    <track src="subtitles/2024-10-23_12-37-13.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video-description" class="description-box">
+                <!-- Description dynamically added via JavaScript -->
             </div>
         </section>
+        
         <section id="certifications">
             <h2>Certifications</h2>
             <ul>
@@ -126,6 +136,5 @@
         <p>Last updated: July 2024</p>
     </footer>
     <script src="darkmode.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
